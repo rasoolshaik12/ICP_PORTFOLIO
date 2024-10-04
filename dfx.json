@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "High_backend": {
+      "main": "src/High_backend/main.mo",
+      "type": "motoko"
+    },
+    "High_frontend": {
+      "dependencies": [
+        "High_backend"
+      ],
+      "source": [
+        "src/High_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "High_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
